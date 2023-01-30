@@ -55,7 +55,11 @@
 
 
   
-<meta name="generator" content="Hexo 5.4.2"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 <body>
   <div id="container">
     <div id="particles-js"></div>
@@ -110,7 +114,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/%E4%B8%B4%E5%BA%8A%E5%BF%83%E7%90%86/" style="font-size: 10px;">临床心理</a> <a href="/tags/%E5%BF%83%E7%90%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%90%86%E8%AE%BA/" style="font-size: 10px;">心理动力学理论</a> <a href="/tags/%E8%87%AA%E6%81%8B%E5%9E%8B%E4%BA%BA%E6%A0%BC/" style="font-size: 10px;">自恋型人格</a>
+						<a href="/tags/%E4%B8%B4%E5%BA%8A%E5%BF%83%E7%90%86/" style="font-size: 20px;">临床心理</a> <a href="/tags/%E5%BF%83%E7%90%86%E5%8A%A8%E5%8A%9B%E5%AD%A6%E7%90%86%E8%AE%BA/" style="font-size: 20px;">心理动力学理论</a> <a href="/tags/%E7%B2%BE%E7%A5%9E%E5%8F%98%E6%80%81/" style="font-size: 10px;">精神变态</a> <a href="/tags/%E8%87%AA%E6%81%8B%E5%9E%8B%E4%BA%BA%E6%A0%BC/" style="font-size: 10px;">自恋型人格</a>
 					</div>
 				</section>
 				
@@ -279,7 +283,7 @@
 <script>
 	var yiliaConfig = {
 		fancybox: true,
-		mathjax: false,
+		mathjax: true,
 		animate: true,
 		isHome: false,
 		isPost: true,
@@ -293,6 +297,26 @@
 <script src="/js/main.js"></script>
 
 
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
 
 
   </div>
